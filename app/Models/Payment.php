@@ -15,10 +15,10 @@ class Payment extends Model
         'order_id'
     ];
 
-    // TODO revisar después que no hay un array dates en HasAttributes trait
-//    protected $dates = [
-//        'payed_at'
-//    ];
+    //There is no dates array in this laravel version but there's still the $casts for it
+    protected $casts = [
+        'payed_at' => 'datetime',
+    ];
 
     public function order()
     {

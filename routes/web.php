@@ -34,5 +34,3 @@ Auth::routes([
     'verify' => true,
 //    'reset' => false //deshabilita el reestablecimiento de contraseñas
 ]);
-
-//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home'); // TODO checar por qué sigue apareciendo la ruta al redirigir
