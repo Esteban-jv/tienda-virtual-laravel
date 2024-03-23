@@ -51,12 +51,10 @@ class ProfileController extends Controller
                     'path' => $request->image->store('users','images'),
                 ]);
             }
-
-
-            //TODO: fix bad redirect
-            return redirect()
-                ->route('profile.edit')
-                ->withSuccess('Perfil editado correctamente');
         }, 5);
+
+        return redirect()
+            ->route('profile.edit')
+            ->withSuccess('Perfil editado correctamente');
     }
 }
